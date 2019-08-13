@@ -10,3 +10,5 @@ const db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error:'))
 
 module.exports = mongoose
+
+// mongo ds115420.mlab.com:15420/crud -u yogeeshsj -p abcABC123!@#
