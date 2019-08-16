@@ -95,5 +95,6 @@ export default {
 <style lang="scss">
 .products {
   margin-top: 40px;
+  padding: 0px 120px;
 }
 </style>
