@@ -38,11 +38,11 @@
       <div class="row">
         <div class="col-md mb-3">
           <input
-            type="text"
+            type="number"
             class="form-control"
             v-model="user.email"
             id="emailId"
-            placeholder="Email address"
+            placeholder="Phone Number"
             value
             required
           >

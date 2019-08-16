@@ -2,10 +2,9 @@
   <div class="home-component">
 
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <img alt="Vue logo" src="../assets/logo.png" width="100px">
-          <h3 class="display-5 "><span style="color:#42b983">ikismail - VueShop</span></h3>
-          <p class="lead">A ShoppingCart (Ecommerce) Application using Vue.js.</p>
+        <div class="container" style="text-align:right; color:#fff">
+          <h2>Rural Connect</h2>
+          <h3 class="display-5"><span style="color:#fff">Get your Goods DoorStep</span></h3>
         </div>
     </div>
     <nav aria-label="breadcrumb">
@@ -42,6 +41,10 @@ export default {
 </script>
 <style>
 .jumbotron {
-  padding: 1rem 0rem;
+padding: 5rem 0rem;
+    background-image: url(https://cdn.shopify.com/s/files/1/2135/7277/products/676_1200x@2x.jpg?v=1503350954);
+    background-repeat: no-repeat;
+    background-size: 100% 202%;
+    background-position: 0px -162px;
 }
 </style>

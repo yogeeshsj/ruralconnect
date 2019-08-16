@@ -1,8 +1,8 @@
 <template>
-  <div id="app" class="container">
+  <div id="app">
     <main>
       <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-        <img alt="Vue logo" src="./assets/logo.png" width="50px">
+        <img src="http://www.ruralconnect.org.nz/wp-content/uploads/2013/02/ruralconnect-logo-transpare2.png" width="160px">
         <button
           class="navbar-toggler"
           type="button"
@@ -15,21 +15,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <router-link to="/" class="nav-link">Home</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/products" class="nav-link">All Products</router-link>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <router-link to="/about" class="nav-link">About</router-link>
-            </li>
-          </ul>
           <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <router-link to="/" class="nav-link">Home</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/products" class="nav-link">All Products</router-link>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <router-link to="/about" class="nav-link">About</router-link>
+              </li>
+            </ul>
             <li class="nav-item">
               <router-link to="/cart" class="nav-link">
                 <i class="fa fa-shopping-cart mr-1">
@@ -67,22 +67,8 @@
       <router-view/>
     </main>
 
-    <footer class="container-fluid footer text-left mt-3">
-      <p class="mr-auto">
-        Developed by:
-        <strong>Mohammed Ismail</strong>
-      </p>
-      <div style="float:right">
-        <a href="mailto:ikismail7@gmail.com" style="margin-right:10px">
-          <i class="fa fa-envelope-open" aria-hidden="true" style="font-size:20px"></i>
-        </a>
-        <a href="https://github.com/ikismail" target="_blank" style="margin-right:10px">
-          <i class="fa fa-github" aria-hidden="true" style="font-size:20px"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/ikismail7/" target="_blank" style="margin-right:10px">
-          <i class="fa fa-linkedin" aria-hidden="true" style="font-size:20px"></i>
-        </a>
-      </div>
+    <footer class="container-fluid footer mt-3">
+      <p style="text-align:center">&copy; RuralConnect All right reserved</p>
     </footer>
   </div>
 </template>
@@ -140,6 +126,17 @@ export default {
 <style lang="scss">
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+
+@media (min-width: 1024px){
+  .best-products, .top-products{
+    padding: 0px 120px;
+  }
+  .home-component nav{
+    padding: 0px 120px;
+  }
+}
+
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -148,7 +145,7 @@ export default {
   color: #2c3e50;
 }
 #nav {
-  padding: 15px;
+    padding: 15px 8%;
   a {
     font-weight: bold;
     color: #2c3e50;

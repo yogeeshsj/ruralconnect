@@ -1,19 +1,19 @@
 <template>
   <div class="login">
-    <div class="row">
+    <div class="row" style="margin:0px">
       <div class="col">
         <createAccount v-if="isSignUp"></createAccount>
 
         <form class="form-signin" @submit.prevent="login" v-if="!isSignUp">
           <img class="mb-4" src="../assets/login-img.png" alt width="72" height="72">
           <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-          <label for="email" class="sr-only">Email address</label>
+          <label for="email" class="sr-only">Phone Number</label>
           <input
-            type="email"
+            type="number"
             id="email"
             class="form-control"
             v-model="email"
-            placeholder="Email address"
+            placeholder="Phone Number"
             required
             autocomplete="email"
           >
